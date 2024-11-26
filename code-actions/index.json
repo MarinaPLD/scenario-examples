@@ -1,6 +1,6 @@
 {
-  "title": "Code Actions",
-  "description": "Let users copy or exec code blocks",
+  "title": "Install Bunkerweb",
+  "description": "Learn step by step how to install Bunkerwen on your Linux systm",
   "details": {
     "intro": {
       "text": "intro.md"
