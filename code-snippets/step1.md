@@ -1,59 +1,8 @@
 
-There is recognition for common languages in code blocks.
 
-### Javascript
-```
-let var = 'good morning';
-alert(var);
-```
+    # Step 1: System Update
 
-### HTML
-```
-<!DOCTYPE HTML>
-<html>
-<body>
-  <p>This is very informative</p>
-</body>
-</html>
-```
+To ensure a smooth installation, update your system using the following command:
 
-### Golang
-
-```
-package main
-import "fmt"
-func main() {
-    fmt.Println("hello world")
-}
-```
-
-### YAML
-
-```
-apiVersion: v1
-kind: Pod
-metadata:
-  name: nginx
-spec:
-  containers:
-  - name: nginx
-    image: nginx
-```
-
-### JSON
-
-```
-{
-    "apiVersion": "v1",
-    "kind": "Pod",
-    "metadata": {
-        "generateName": "weave-net-",
-        "labels": {
-            "name": "weave-net",
-            "pod-template-generation": "1"
-        },
-        "name": "weave-net-tntwq",
-        "namespace": "kube-system",
-    }
-}
-```
+```bash
+sudo apt update && sudo apt upgrade -y

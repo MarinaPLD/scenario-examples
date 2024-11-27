@@ -1,19 +1,30 @@
 {
-  "title": "Let's install Bunkerweb",
-  "description": "You will learn how to install Bunkerweb, your opensource WAF to your Linux system",
+  "title": "Installing BunkerWeb on Linux",
+  "description": "Learn how to install and configure BunkerWeb directly on a Linux system and access its user interface.",
   "details": {
     "intro": {
       "text": "intro.md"
     },
     "steps": [
       {
+        "title": "System Update",
         "text": "step1.md"
       },
       {
+        "title": "Install Necessary Dependencies", 
         "text": "step2.md"
       },
       {
+        "title": "Download and Set Up BunkerWeb",
         "text": "step3.md"
+      }
+      {
+        "title": "Start BunkerWeb",
+        "text": "step4.md"
+      }
+      {
+        "title": "Access the BunkerWeb UI",
+        "text": "step5.md"
       }
     ],
     "finish": {
