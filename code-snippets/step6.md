@@ -1,5 +1,6 @@
----
+# Step 6: Prevent Upgrading NGINX and BunkerWeb
 
-##### **Step 6: To prevent upgrading NGINX and/or BunkerWeb packages when executing apt upgrade, you can use the following command : : (`step3.md`)**
-```markdown
+To prevent upgrading the NGINX and/or BunkerWeb packages when executing `apt upgrade`, use the following command:
+
+```bash
 sudo apt-mark hold nginx bunkerweb
