@@ -1,6 +1,6 @@
 {
-  "title": "Code Snippets",
-  "description": "Include code snippets of various languages",
+  "title": "Let's install Bunkerweb",
+  "description": "You will learn how to install Bunkerweb, your opensource WAF to your Linux system",
   "details": {
     "intro": {
       "text": "intro.md"
