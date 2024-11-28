@@ -1,4 +1,7 @@
-set -x # to test stderr output in /var/log/killercoda
-echo starting... # to test stdout output in /var/log/killercoda
-sleep 3
-echo done > /tmp/background0
+#!/bin/bash
+
+# Mise à jour des paquets, préparation de l'environnement et installation des dépendances nécessaires pour le tutoriel BunkerWeb
+apt update && apt install -y curl gnupg2 ca-certificates lsb-release ubuntu-keyring >/dev/null 2>&1
+
+
+

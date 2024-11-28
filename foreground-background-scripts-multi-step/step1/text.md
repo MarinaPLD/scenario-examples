@@ -1,8 +1,12 @@
+# Step 1: Updating the System
 
-<br>
+Before installing BunkerWeb, it is important to ensure that your Linux system is up to date. This helps to avoid compatibility issues and ensures that all required packages are readily available.
 
-Please create file `/tmp/step1`:
+## Commands to Run
 
-```
-touch /tmp/step1
-```{{exec}}
+To update your system, execute the following command in the terminal:
+
+```bash
+sudo apt update && sudo apt upgrade -y
+
+<
