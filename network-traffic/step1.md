@@ -25,10 +25,10 @@ Check if the container is running by using the following command:
 docker ps
 ```{{exec}}
 
-The output should display a container with the name **bunkerity/bunkerweb** and the ports **80** and **443** mapped.
+The output should display a container with the name **bunkerity/bunkerweb** and the ports **8080** and **8443** mapped.
 
 ## Access BunkerWeb UI
 
 Once the container is running, you can access the BunkerWeb interface via this link:
 
-[ACCESS BUNKERWEB UI (HTTP)]({{TRAFFIC_HOST1_80}})
+[ACCESS BUNKERWEB UI (HTTP)]({{TRAFFIC_HOST1_8080}})
