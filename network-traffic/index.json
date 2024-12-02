@@ -1,17 +1,17 @@
 {
-  "title": "Network Traffic",
-  "description": "Access services running inside an environment",
+  "title": "Install and Use BunkerWeb with Docker",
+  "description": "Learn how to install and configure BunkerWeb using Docker on Ubuntu 20.04.",
   "details": {
     "intro": {
       "text": "intro.md"
     },
     "steps": [
       {
-        "title": "Run Nginx and access default page",
+        "title": "Run Bunkerweb Container",
         "text": "step1.md"
       },
       {
-        "title": "Run Apache and access default page",
+        "title": "Access the BunkerWeb UI",
         "text": "step2.md"
       }
     ]

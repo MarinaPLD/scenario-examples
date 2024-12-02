@@ -32,8 +32,6 @@
     }
   },
   "backend": {
-    "environment": {
-    "imageid": "ubuntu:24.04 LTS"
-  }
+    "imageid": "ubuntu"
   }
 }

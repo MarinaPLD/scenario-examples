@@ -1,32 +1,34 @@
 
-> Services need to run on all interfaces (like 0.0.0.0) and not just localhost.
-<br>
-> Services need to be accessible via HTTP and **not** HTTPS.
+# Step 1: Run BunkerWeb on Docker
 
-Run Nginx on port 80 using Docker:
+In this step, you will launch the BunkerWeb container on port 80 (HTTP) and port 443 (HTTPS) using Docker.
 
-```
-docker run -p 80:80 nginx:alpine
+## Run BunkerWeb on Ports 80 and 443
+
+To start BunkerWeb as a Docker container in the foreground, execute:
+
+```bash
+docker run -p 80:8080 -p 443:8443 bunkerity/bunkerweb:latest
 ```{{exec}}
 
+Or, to run it in the background:
 
-Or run it in background:
-
-```
-docker run -d -p 80:80 nginx:alpine
+```bash
+docker run -d -p 80:8080 -p 443:8443 bunkerity/bunkerweb:latest
 ```{{exec}}
 
-Now access Nginx using this link:
+## Verify the Container is Running
 
-[ACCESS NGINX]({{TRAFFIC_HOST1_80}})
+Check if the container is running by using the following command:
 
-It's also possible to access ports using the top-right navigation in the terminal.
-Or we can display the link to that page:
-
-[ACCESS PORTS]({{TRAFFIC_SELECTOR}})
-
-It's also possible to generate access URLs in bash (foreground or background scripts) like this:
-
-```
-sed 's/PORT/80/g' /etc/killercoda/host
+```bash
+docker ps
 ```{{exec}}
+
+The output should display a container with the name **bunkerity/bunkerweb** and the ports **80** and **443** mapped.
+
+## Access BunkerWeb UI
+
+Once the container is running, you can access the BunkerWeb interface via this link:
+
+[ACCESS BUNKERWEB UI (HTTP)]({{TRAFFIC_HOST1_80}})
