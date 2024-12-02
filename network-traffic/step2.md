@@ -11,7 +11,7 @@ Once the BunkerWeb container is running, you can access its user interface:
 
 Click the link below to access BunkerWeb using HTTP:
 
-[ACCESS BUNKERWEB HTTP]({{TRAFFIC_HOST1_8081}})
+[ACCESS BUNKERWEB HTTP]({{TRAFFIC_HOST1_8080}})
 
 ### Access via HTTPS (Port 443)
 
@@ -27,7 +27,7 @@ You can also test connectivity to the server directly from the terminal:
 
 1. **Test HTTP Access**:
    ```bash
-   curl http://{{TRAFFIC_HOST1_8081}}
+   curl http://{{TRAFFIC_HOST1_8080}}
    ```{{exec}}
 
 2. **Test HTTPS Access**:
