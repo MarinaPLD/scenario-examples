@@ -14,7 +14,7 @@ docker run -p 8080:8080 -p 8443:8443 bunkerity/bunkerweb:1.6.0-beta
 Or, to run it in the background:
 
 ```bash
-docker run -d -p 8080:8081 -p 8443:8443 bunkerity/bunkerweb:1.6.0-beta
+docker run -d -p 8080:8080 -p 8443:8443 bunkerity/bunkerweb:1.6.0-beta
 ```{{exec}}
 
 ## Verify the Container is Running
