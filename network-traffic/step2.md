@@ -27,12 +27,12 @@ You can also test connectivity to the server directly from the terminal:
 
 1. **Test HTTP Access**:
    ```bash
-   curl http://{{TRAFFIC_HOST1_8080}}
+   curl {{TRAFFIC_HOST1_8080}}
    ```{{exec}}
 
 2. **Test HTTPS Access**:
    ```bash
-   curl -k https://{{TRAFFIC_HOST1_8443}}
+   curl -k {{TRAFFIC_HOST1_8443}}
    ```{{exec}}
 
 These commands will display the response headers or content served by BunkerWeb.
