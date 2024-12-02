@@ -33,7 +33,7 @@
   },
   "backend": {
     "environment": {
-    "image": "ubuntu:22.04"
+    "imageid": "ubuntu:22.04"
   }
   }
 }
