@@ -32,6 +32,8 @@
     }
   },
   "backend": {
-    "imageid": "ubuntu:22.04"
+    "environment": {
+    "image": "ubuntu:22.04"
+  }
   }
 }
