@@ -1,0 +1,29 @@
+services:
+  bw:
+    image: bunkerity/bunkerweb:1.6.0-beta
+  port:
+  - 8080:80
+  network:
+  - test
+  environnement:
+    USER: "workshop"
+
+scheduler:
+    image: bunkerity/bunkerweb-scheduler: 1.6.0.-beta
+
+network:
+  - workshop
+port:
+ - 7070:70
+environnement:
+ - USER: "workshop"
+
+nginx:
+image: nginxdemos/nginx-hello
+network:
+ - test
+environnement:
+ -User: "workshop"
+
+networks:
+ - workshop
