@@ -8,13 +8,13 @@ In this step, you will launch the BunkerWeb container on port 80 (HTTP) and port
 To start BunkerWeb as a Docker container in the foreground, execute:
 
 ```bash
-docker run -p 80:8080 -p 443:8443 bunkerity/bunkerweb: 1.6.0-beta
+docker run -p 80:8080 -p 443:8443 bunkerity/bunkerweb:1.6.0-beta
 ```{{exec}}
 
 Or, to run it in the background:
 
 ```bash
-docker run -d -p 80:8080 -p 443:8443 bunkerity/bunkerweb: 1.6.0-beta
+docker run -d -p 80:8080 -p 443:8443 bunkerity/bunkerweb:1.6.0-beta
 ```{{exec}}
 
 ## Verify the Container is Running
