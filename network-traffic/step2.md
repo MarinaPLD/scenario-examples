@@ -6,6 +6,7 @@ BunkerWeb uses a configuration file called `bunkerweb.yml` to define its behavio
 
 Use the following command to inspect the `bunkerweb.yml` file:
 
+```bash
 nano bunkerweb.yml
 ```{{exec}}
 
