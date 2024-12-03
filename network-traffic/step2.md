@@ -6,9 +6,10 @@ BunkerWeb uses a configuration file called `bunkerweb.yml` to define its behavio
 
 Use the following command to inspect the `bunkerweb.yml` file:
 
-```bash
 nano bunkerweb.yml
 ```{{exec}}
+
+---
 
 This file enables default security policies for the web server. You can customize it further if needed.
 
