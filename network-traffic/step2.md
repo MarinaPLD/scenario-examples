@@ -2,6 +2,25 @@
 
 BunkerWeb uses a configuration file called `bunkerweb.yml` to define its behavior. In this scenario, a custom configuration file is already provided.
 
+```bash
+cat <<EOF > bunkerweb.yml
+server:
+  default-security: true
+  port: 8080
+  ssl-port: 8443
+
+security:
+  headers:
+    x-frame-options: "DENY"
+    x-content-type-options: "nosniff"
+    strict-transport-security: "max-age=31536000; includeSubDomains"
+
+logs:
+  level: "info"
+  output: "stdout"
+EOF
+```{{exec}}
+
 ### View the Configuration File
 
 Use the following command to inspect the `bunkerweb.yml` file:

@@ -12,9 +12,12 @@ sudo apt update -y && sudo apt upgrade -y
 ```{{exec}}
 
 To run your contenair bunkerweb it in the background, execute:
-
-```bash
-docker run -d -p 8080:8080 -p 8443:8443 bunkerity/bunkerweb:1.6.0-beta
+docker run -d \
+  -p 8080:8080 \
+  -p 8443:8443 \
+  --name bunkerweb \
+  -v $(pwd)/bunkerweb.yml:/etc/bunkerweb/bunkerweb.yml \
+  bunkerity/bunkerweb:1.6.0-beta
 ```{{exec}}
 
 ## Verify the Container is Running
