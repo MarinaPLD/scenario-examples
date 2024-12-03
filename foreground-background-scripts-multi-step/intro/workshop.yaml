@@ -9,7 +9,7 @@ services:
     USER: "workshop"
 
 scheduler:
-    image: bunkerity/bunkerweb-scheduler: 1.6.0.-beta
+    image: bunkerity/bunkerweb-scheduler: 1.6.0-beta
 
 network:
   - workshop
@@ -27,3 +27,4 @@ environnement:
 
 networks:
  - workshop
+ 
