@@ -11,10 +11,16 @@ To start update and upgrade your system:
 sudo apt update -y && sudo apt upgrade -y
 ```{{exec}}
 
-To run your contenair bunkerweb it in the background, execute:
+To run your BunkerWeb stack, firstly, let's download a simple compose file:
 
 ```bash
-docker run -d -p 8080:8080 -p 8443:8443 bunkerity/bunkerweb:1.6.0-beta
+wget https://github.com/bunkerity/bunkerweb/raw/refs/heads/master/examples/reverse-proxy-multisite/docker-compose.yml
+```{{exec}}
+
+Let's verify the downloaded file:
+
+```bash
+cat docker-compose.yml
 ```{{exec}}
 
 ## Verify the Container is Running
