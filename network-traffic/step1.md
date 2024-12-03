@@ -1,34 +1,33 @@
-
 # Step 1: Run BunkerWeb on Docker
 
-In this step, you will launch the BunkerWeb container on port 80 (HTTP) and port 443 (HTTPS) using Docker.
+In this step, you will start the BunkerWeb container using Docker.
 
-## Run BunkerWeb on Ports 80 and 443
+## Start BunkerWeb Container
 
-To start update and upgrade your system:
-
-```bash
-sudo apt update -y && sudo apt upgrade -y
-```
-
-To run your contenair bunkerweb it in the background, execute:
+Run the following command to pull and start the **BunkerWeb** container:
 
 ```bash
-docker run -d -p 8080:8080 -p 8443:8443 bunkerity/bunkerweb:1.6.0-beta
+docker run -d \
+  -p 8080:8080 \
+  -p 8443:8443 \
+  --name bunkerweb \
+  -v $(pwd)/bunkerweb.yml:/etc/bunkerweb/bunkerweb.yml \
+  bunkerity/bunkerweb:1.6.0-beta
 ```{{exec}}
 
-## Verify the Container is Running
+### Explanation
+- **`-d`**: Runs the container in the background.
+- **`-p 8080:8080`**: Maps HTTP traffic from the host to the container.
+- **`-p 8443:8443`**: Maps HTTPS traffic from the host to the container.
+- **`--name bunkerweb`**: Assigns the name "bunkerweb" to the container.
+- **`-v $(pwd)/bunkerweb.yml:/etc/bunkerweb/bunkerweb.yml`**: Mounts the custom configuration file.
 
-Check if the container is running by using the following command:
+### Verify the Container is Running
+
+Check the status of the container:
 
 ```bash
 docker ps
 ```{{exec}}
 
-The output should display a container with the name **bunkerity/bunkerweb** and the ports **8080** and **8443** mapped.
-
-## Access BunkerWeb UI
-
-Once the container is running, you can access the BunkerWeb interface via this link:
-
-[ACCESS BUNKERWEB UI (HTTP)]({{TRAFFIC_HOST1_8080}})
+If the container is running, proceed to the next step.
