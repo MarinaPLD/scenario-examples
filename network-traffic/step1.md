@@ -12,6 +12,8 @@ sudo apt update -y && sudo apt upgrade -y
 ```{{exec}}
 
 To run your contenair bunkerweb it in the background, execute:
+
+```bash
 docker run -d \
   -p 8080:8080 \
   -p 8443:8443 \
