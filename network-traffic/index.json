@@ -7,12 +7,16 @@
     },
     "steps": [
       {
-        "title": "Run Bunkerweb Container",
+        "title": "Configurate Bunkerweb Container",
         "text": "step1.md"
       },
       {
-        "title": "Access the BunkerWeb UI",
+        "title": "Run BunkerWeb Contenair",
         "text": "step2.md"
+      },
+      {
+        "title": "Access the BunkerWeb UI",
+        "text": "step3.md"
       }
     ]
   },
