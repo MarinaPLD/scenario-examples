@@ -5,13 +5,13 @@ In this step, you will launch the BunkerWeb container on port 80 (HTTP) and port
 
 ## Run BunkerWeb on Ports 80 and 443
 
-To start BunkerWeb as a Docker container in the foreground, execute:
+To start update and upgrade your system:
 
 ```bash
-docker run -p 8080:8080 -p 8443:8443 bunkerity/bunkerweb:1.6.0-beta
-```{{exec}}
+sudo apt update -y && sudo apt upgrade -y
+```
 
-Or, to run it in the background:
+To run your contenair bunkerweb it in the background, execute:
 
 ```bash
 docker run -d -p 8080:8080 -p 8443:8443 bunkerity/bunkerweb:1.6.0-beta
