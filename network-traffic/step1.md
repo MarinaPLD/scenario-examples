@@ -1,62 +1,34 @@
+
+# Step 1: Run BunkerWeb on Docker
+
+In this step, you will launch the BunkerWeb container on port 80 (HTTP) and port 443 (HTTPS) using Docker.
+
+## Run BunkerWeb on Ports 80 and 443
+
+To start update and upgrade your system:
+
+```bash
 sudo apt update -y && sudo apt upgrade -y
 ```{{exec}}
 
----
-
-## Create the Configuration File
-
-To ensure BunkerWeb runs correctly, create a configuration file named `bunkerweb.yml` with the following default settings:
+To run your contenair bunkerweb it in the background, execute:
 
 ```bash
-cat <<EOF > bunkerweb.yml
-server:
-  default-security: true
-  port: 8080
-  ssl-port: 8443
-
-security:
-  headers:
-    x-frame-options: "DENY"
-    x-content-type-options: "nosniff"
-    strict-transport-security: "max-age=31536000; includeSubDomains"
-
-logs:
-  level: "info"
-  output: "stdout"
-EOF
+docker run -d -p 8080:8080 -p 8443:8443 bunkerity/bunkerweb:1.6.0-beta
 ```{{exec}}
-
-Verify the file content:
-
-```bash
-cat bunkerweb.yml
-```{{exec}}
-
----
-
-## Run BunkerWeb in a Docker Container
-
-Now, start the BunkerWeb container using the `docker run` command. This command maps HTTP traffic to port **8080** and HTTPS traffic to port **8443**, and mounts the configuration file:
-
-```bash
-docker run -d \
-  -p 8080:8080 \
-  -p 8443:8443 \
-  --name bunkerweb \
-  -v $(pwd)/bunkerweb.yml:/etc/bunkerweb/bunkerweb.yml \
-  bunkerity/bunkerweb:1.6.0-beta
-```{{exec}}
-
----
 
 ## Verify the Container is Running
 
-Check if the container is running using:
+Check if the container is running by using the following command:
 
 ```bash
 docker ps
 ```{{exec}}
 
-The output should show a container with the name **bunkerweb** and the ports **8080** and **8443** mapped.
+The output should display a container with the name **bunkerity/bunkerweb** and the ports **8080** and **8443** mapped.
 
-Example output:
+## Access BunkerWeb UI
+
+Once the container is running, you can access the BunkerWeb interface via this link:
+
+[ACCESS BUNKERWEB UI (HTTP)]({{TRAFFIC_HOST1_8080}})
