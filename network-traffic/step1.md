@@ -14,7 +14,7 @@ rm -f /usr/bin/docker && curl -fsSL https://get.docker.com/ | sh
 To run your BunkerWeb stack, firstly, let's download a simple compose file:
 
 ```bash
-wget https://github.com/bunkerity/bunkerweb/raw/refs/heads/master/examples/web-ui/docker-compose.wizard.yml docker-compose.yml
+wget https://github.com/bunkerity/bunkerweb/raw/refs/heads/master/examples/web-ui/docker-compose.wizard.yml -O docker-compose.yml
 ```{{exec}}
 
 Let's verify the downloaded file:
