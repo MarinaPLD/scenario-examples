@@ -39,10 +39,12 @@ sed -i "s|:${BUNKERWEB_TAG}$|:${NEW_TAG}|g" docker-compose.yml
 ```{{exec}}
 
 </details>
+<br>
 
 And now we can start the stack:
 
 ```bash
+sed -i 's|${WEB_UI_HOST}|'"$(sed 's/PORT/1/g' /etc/killercoda/host | cut -d '/' -f 3)"'|g' docker-compose.yml
 docker-compose up -d
 ```{{exec}}
 
@@ -55,9 +57,3 @@ docker-compose ps
 ```{{exec}}
 
 The output should display the running containers and their status.
-
-## Access BunkerWeb UI
-
-Once the ui container is running, you can access the BunkerWeb user interface via this link:
-
-[Access BunkerWeb UI (HTTPS)]({{TRAFFIC_HOST1_1}})

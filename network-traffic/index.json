@@ -9,6 +9,10 @@
       {
         "title": "Configure and Start BunkerWeb UI stack",
         "text": "step1.md"
+      },
+      {
+        "title": "Play with BunkerWeb UI",
+        "text": "step2.md"
       }
     ],
     "assets": {

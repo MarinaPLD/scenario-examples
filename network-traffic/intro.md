@@ -6,7 +6,7 @@ In this hands-on tutorial, you'll dive into deploying and exploring **BunkerWeb*
 
 ---
 
-## :star2: **What You Will Learn**:
+## 🌟 **What You Will Learn**:
 1. **Pulling the BunkerWeb Docker Image**: Understand how to download the official image for seamless deployment.
    
 2. **Running BunkerWeb in a Container**: Learn to launch BunkerWeb, map it to your system ports, and configure it for your needs.
@@ -15,12 +15,12 @@ In this hands-on tutorial, you'll dive into deploying and exploring **BunkerWeb*
 
 ---
 
-## :white_check_mark: **Prerequisites**:
+## ✅ **Prerequisites**:
 - A basic understanding of **Docker** and terminal commands.
 - **Docker is pre-installed** in this environment, so you're ready to go.
 
 ---
 
-### :rocket: **Let’s Get Started!**
+### 🚀 **Let’s Get Started!**
 
 Follow along to deploy BunkerWeb in minutes and experience its security-first design. Click "Next" to begin your journey!
