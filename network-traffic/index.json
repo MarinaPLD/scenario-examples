@@ -3,7 +3,8 @@
   "description": "Learn how to install and configure BunkerWeb via the web interface using Docker on Ubuntu 20.04.",
   "details": {
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "background": "background.sh"
     },
     "steps": [
       {

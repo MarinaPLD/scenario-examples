@@ -7,7 +7,7 @@ Now that the BunkerWeb stack is up and running, let's explore the BunkerWeb UI t
 
 Once the ui container is running, you can access the BunkerWeb setup wizard via this link:
 
-**Disclaimer**: You can safely ignore the service name `webui.example.com`, this is just a placeholder for the tutorial. As we access the web UI and do not go through BunkerWeb's reverse proxy, it doesn't matter what the service name is. (We have to proceed this way because Killercoda about redirection)
+> ⚠️ **Disclaimer**: You can safely ignore the service name `webui.example.com`, this is just a placeholder for the tutorial. As we access the web UI and do not go through BunkerWeb's reverse proxy, it doesn't matter what the service name is. (We have to proceed this way because Killercoda about redirection)
 
 [Access BunkerWeb UI (HTTPS)]({{TRAFFIC_HOST1_1}})
 
