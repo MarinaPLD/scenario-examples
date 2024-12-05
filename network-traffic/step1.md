@@ -44,7 +44,6 @@ sed -i "s|:${BUNKERWEB_TAG}$|:${NEW_TAG}|g" docker-compose.yml
 And now we can start the stack:
 
 ```bash
-sed -i 's|${WEB_UI_HOST}|'"$(sed 's/PORT/1/g' /etc/killercoda/host | cut -d '/' -f 3)"'|g' docker-compose.yml
 docker-compose up -d
 ```{{exec}}
 
