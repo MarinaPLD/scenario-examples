@@ -1,4 +1,3 @@
-#!/bin/bash
 
 # We need to redirect all traffic from port 3-65535 to port 2 so the user can create as many services as they want
 iptables -t nat -A PREROUTING -p tcp --dport 3:65535 -j REDIRECT --to-port 2
