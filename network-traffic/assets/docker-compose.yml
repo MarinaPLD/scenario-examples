@@ -1,3 +1,5 @@
+version: "3"
+
 services:
   bunkerweb:
     image: bunkerity/bunkerweb:v1.6.0-beta
@@ -43,7 +45,6 @@ services:
     restart: "unless-stopped"
     networks:
       - bw-universe
-      - bw-db
 
   bw-ui:
     image: bunkerity/bunkerweb-ui:v1.6.0-beta
@@ -58,7 +59,6 @@ services:
     restart: "unless-stopped"
     networks:
       - bw-universe
-      - bw-db
 
   app1:
     image: nginxdemos/nginx-hello

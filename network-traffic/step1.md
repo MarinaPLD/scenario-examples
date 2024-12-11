@@ -38,7 +38,7 @@ sed -i "s|:${BUNKERWEB_TAG}$|:${NEW_TAG}|g" docker-compose.yml
 And now we can start the stack:
 
 ```bash
-docker compose up -d
+docker-compose up -d
 ```{{exec}}
 
 ## Verify the Containers are running
@@ -46,7 +46,7 @@ docker compose up -d
 Check if the containers are running by using the following command:
 
 ```bash
-docker compose ps
+docker-compose ps
 ```{{exec}}
 
 The output should display the running containers and their status.
