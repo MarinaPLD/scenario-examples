@@ -1,3 +1,3 @@
-# We upgrade docker to the latest version
-rm -f /usr/bin/docker && curl -fsSL https://get.docker.com/ | sh
-dockerd &>/dev/null &
+echo "waiting for init-background-script to finish"
+while [ ! -f /tmp/background ]; do sleep 1; done
+echo "Here we go! 🚀"
