@@ -1,5 +1,3 @@
-version: "3"
-
 services:
   bunkerweb:
     image: bunkerity/bunkerweb:v1.6.0-beta
@@ -24,7 +22,6 @@ services:
       BUNKERWEB_INSTANCES: "bunkerweb"
       SERVER_NAME: "${WEB_UI_HOST}"
       MULTISITE: "yes"
-      DATABASE_URI: "mariadb+pymysql://bunkerweb:secret@bw-db:3306/db"
       API_WHITELIST_IP: "127.0.0.0/24 10.20.30.0/24"
       SERVE_FILES: "no"
       USE_BUNKERNET: "no"
@@ -53,26 +50,14 @@ services:
     container_name: bw-ui
     ports:
       - "1:7000"
+    volumes:
+      - bw-data:/data
     environment:
-      DATABASE_URI: "mariadb+pymysql://bunkerweb:secret@bw-db:3306/db"
       CHECK_PRIVATE_IP: "no"
       ALWAYS_REMEMBER: "yes"
     restart: "unless-stopped"
     networks:
       - bw-universe
-      - bw-db
-
-  bw-db:
-    image: mariadb:11
-    environment:
-      MYSQL_RANDOM_ROOT_PASSWORD: "yes"
-      MYSQL_DATABASE: "db"
-      MYSQL_USER: "bunkerweb"
-      MYSQL_PASSWORD: "secret" # replace with a stronger password
-    volumes:
-      - bw-db:/var/lib/mysql
-    restart: "unless-stopped"
-    networks:
       - bw-db
 
   app1:
@@ -83,7 +68,6 @@ services:
 
 volumes:
   bw-data:
-  bw-db:
 
 
 networks:
@@ -93,4 +77,3 @@ networks:
       config:
         - subnet: 10.20.30.0/24
   bw-services:
-  bw-db:
